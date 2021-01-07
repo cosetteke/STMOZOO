@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.12.17
+# v0.12.15
 
 using Markdown
 using InteractiveUtils
@@ -47,7 +47,7 @@ md"""
 md"""
 ## Illustration
 
-Let's start with a list of lists, for each list inside indicates two nodes that have edges between them. For example, node1 has edges with node5, node2, node4 and node3 according to the *adjacent_list* infomation.
+Let's start with a list of lists, for each list inside indicates two nodes that have edges between them. For example, node1 has edges with node5, node2, node4 and node3 according to the *adjacent_list* information.
 
 """
 
@@ -80,11 +80,11 @@ end
 
 # ╔═╡ 77a637fe-5019-11eb-3c4b-7962e4e8ac3d
 md"""
-After convert into dictionary, we can check if this dictionary of nodes has eulerian cycle or not, based on the theory: 
+After converting it into a dictionary, we can check if this dictionary of nodes has an eulerian cycle or not, based on the theory: 
 
 **An undirected graph has an Eulerian cycle if and only if exactly zero or two vertices have odd degree, and all of its vertices with nonzero degree belong to a single connected component.**
 
-So here we check for each key, the length of the value is odd or even. If all of the lengths are even, the nodes has an eulerian cycle.
+So here we check for each key whether the length of the value is odd or even. If all of the lengths are even, the nodes have an eulerian cycle.
 
 """
 
@@ -93,7 +93,7 @@ has_eulerian_cycle(adj_dict)
 
 # ╔═╡ 4916fbfc-501a-11eb-246f-0fc3bf6544cd
 md"""
-For eulerian path, its condition is different from has_eulerian_cycle condition. If there are 0 **or** two nodes have even degree, an eulerian path can be created.
+For eulerian path, its condition is different from the has\_eulerian\_cycle condition. If there are 0 **or** two nodes with an even degree, an eulerian path can be created.
 
 """
 
