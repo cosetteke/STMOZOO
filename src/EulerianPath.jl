@@ -54,11 +54,12 @@ end
     has_eulerian_path(adj_list)
 
 """
+# No documentation for this one? Poor has_eulerian_path :( - Bram
 
 function has_eulerian_path(adj_list)
     odd = 0
     for node in keys(adj_list)
-        if isodd(length(adj_list[node]))
+        if isodd(length(adj_list[node])) # Why use isodd here and % 2 != 0 in the previous function? May be neater to use the same for both. - Bram
             odd += 1
         end
     end
